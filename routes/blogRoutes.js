@@ -18,14 +18,14 @@ router.post('/add', (req, res)=> {
     const title = req.body.title;
     const info = req.body.info;
     const image = req.body.image;
-    const date = Date.parse(req.body.date);
+    // const date = Date.parse(req.body.date);
 
     const blogNew = new Blog({
         user: user, 
         title: title, 
         info: info, 
-        image: image, 
-        date: date
+        image: image 
+        // date: date
     });
     
     blogNew.save()
