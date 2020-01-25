@@ -1,0 +1,61 @@
+.backdrop {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  
+  
+}
+.authenticate{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 500px;
+    border: 1px solid burlywood;
+    background: snow;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+   
+}
+.auth-form {
+    width: 70%;
+    border: 1px double linen;
+}
+.links {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-self: flex-end;
+}
+.auth-link {
+    border: 1px double silver;
+    cursor: pointer;
+    font-weight: 300;
+    height: 100%;
+}
+.auth-link:hover {
+    background: rgb(247, 221, 195);
+}
+.auth-link.active {
+    border: 1px double silver;
+    cursor: pointer;
+    font-weight: 300;
+    height: 100%;
+    background: gray;
+    color: linen;
+    font-style: italic;
+}

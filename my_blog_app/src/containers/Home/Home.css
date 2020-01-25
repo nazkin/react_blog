@@ -1,0 +1,17 @@
+.hero{
+    background: url('https://images.unsplash.com/photo-1423592707957-3b212afa6733?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80');
+}
+.life{
+    font-style: italic;
+    color: darkslategrey;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.blog-card {
+    padding: 1.2rem;
+    border-top: 2px double darkslategrey;
+    border-bottom: 2px double darkslategrey;
+    margin-bottom: 2rem;
+
+}
