@@ -25,7 +25,7 @@ app.use('/users', userRouter);
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('my_blog_app/build'));
     app.get('*', (req,res)=> {
-        res.sendFile(path.join(_dirname,'my_blog_app','build','index.html'));
+        res.sendFile(path.join(__dirname,'my_blog_app','build','index.html'));
     })
 }
 app.listen(PORT, ()=> {
