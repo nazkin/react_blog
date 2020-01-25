@@ -13,7 +13,7 @@ class BlogsList extends Component {
  }
 
  componentDidMount(){
-    axios.get('http://localhost:5000/blogs/')
+    axios.get('/blogs')
      .then(response => {
        this.setState({
          blogList: response.data
