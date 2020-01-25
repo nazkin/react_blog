@@ -58,7 +58,7 @@ submitFormHandler = (e)=> {
       .then(result=> console.log(`New blog addded successfully: ${result.data}`))
       .catch(err => console.log(`error adding a value to database: ${err}`));
 
-      window.location = '/';
+     
 }
 
 

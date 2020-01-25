@@ -19,7 +19,7 @@ class BlogEdit extends Component {
  }
 
  componentDidMount(){
-  axios.get(`http://localhost:5000/blogs/${this.props.match.params.id}`)
+  axios.get(`/blogs/${this.props.match.params.id}`)
    .then(response => {
      this.setState({
        user: response.data.user,
@@ -68,11 +68,11 @@ submitFormHandler = (e)=> {
      date: this.state.date
   }
   console.log(blog);
-  axios.post('http://localhost:5000/edit/'+this.props.match.params.id, blog)
+  axios.post('/edit/'+this.props.match.params.id, blog)
      .then(res=> console.log(`New blog added : ${res.data}`))
      .catch(err=> console.log(err));
 
-     window.location = '/';
+     
 }
  render() {
   return(
