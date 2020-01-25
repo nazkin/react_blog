@@ -18,7 +18,7 @@ class BlogDetailed extends Component {
      date: ''
  }
  componentDidMount(){
-    axios.get(`http://localhost:5000/blogs/${this.props.match.params.id}`)
+    axios.get(`/blogs/${this.props.match.params.id}`)
      .then(response => {
        this.setState({
          user: response.data.user,
@@ -31,7 +31,7 @@ class BlogDetailed extends Component {
      .catch(err => console.log(err));
   }
   deleteBlogHandler = ()=> {
-    axios.delete(`http://localhost:5000/blogs/${this.props.match.params.id}`)
+    axios.delete(`/blogs/${this.props.match.params.id}`)
       .then(res=> console.log(res.data))
       .catch(err => console.log(`Error deleting exercise: ${err}`));
 

@@ -54,7 +54,7 @@ submitFormHandler = (e)=> {
       date: this.state.date
    }
    console.log(blog);
-   axios.post('http://localhost:5000/blogs/add', blog)
+   axios.post('blogs/add', blog)
       .then(result=> console.log(`New blog addded successfully: ${result.data}`))
       .catch(err => console.log(`error adding a value to database: ${err}`));
 
