@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const path = require('path');
 const app = express();
 app.use(cors());
@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 const mongoDB = 'mongodb://localhost:27017/myBlog_react';
-mongoose.connect(process.env.MONGODB_URI||mongoDB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true  }, function(err){
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true  }, function(err){
     if(err){
         console.log(err);
     }else {

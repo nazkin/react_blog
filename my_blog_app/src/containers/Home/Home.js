@@ -14,7 +14,7 @@ class Home extends Component {
   return(
   <div>
      <div className="hero jumbotron">
-       <h1>Make  <span class="life">YOUR</span>  thoughts come to  <span class="life">LIFE</span></h1>
+       <h1>Make  <span className="life">YOUR</span>  thoughts come to  <span className="life">LIFE</span></h1>
        <h3>One letter at a time...</h3>
        <button className="btn btn-outline-light my-5">Explore Thoughts</button>
    </div>

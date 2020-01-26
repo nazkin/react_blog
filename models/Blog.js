@@ -11,8 +11,8 @@ const blogSchema = new mongoose.Schema({
     user: String,
     title: String, 
     info: String,
-    image: String,
-    date: {type: Date, required: false, default: Date.now}
+    image: String
+   // date: {type: Date, required: false, default: Date.now}
 });
 
 const aBlog = mongoose.model('aBlog', blogSchema);

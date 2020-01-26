@@ -19,7 +19,7 @@ class BlogsList extends Component {
          blogList: response.data
        });
      })
-     .catch(err => console.log(err));
+     .catch(err => console.log(`Could not retrieve values from database ${err}`));
   }
   deleteBlogHandler = () =>{
       console.log("This should delete a blog")
